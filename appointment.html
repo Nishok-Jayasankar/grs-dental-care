@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book an appointment — GRS Dental Care, Sholinganallur</title>
+<meta name="description" content="Request a dental appointment at GRS Dental Care in Sholinganallur, Chennai. Tell us what you need and we will call back to confirm a time.">
+<link rel="canonical" href="https://example.com/appointment.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book an appointment — GRS Dental Care, Sholinganallur">
+<meta property="og:description" content="Request a dental appointment at GRS Dental Care in Sholinganallur, Chennai. Tell us what you need and we will call back to confirm a time.">
+<meta property="og:image" content="https://example.com/assets/clinic-room.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="shell">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="">
+      <span><b>GRS Dental Care</b><span>Sholinganallur, Chennai</span></span>
+    </a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-go" href="appointment.html" aria-current="page">Book a visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="pagehead">
+    <div class="shell">
+      <h1>Book a visit</h1>
+      <p>Tell us who you are and roughly when suits you. We will call back to confirm an exact time, usually within a few hours.</p>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="shell">
+      <div class="notice">
+        <p><strong>In pain right now?</strong> Do not use this form &mdash; call <a href="tel:+918807754007">88077 54007</a>. We keep slots free every day for toothache and will fit you in the same day where we can.</p>
+      </div>
+
+      <form class="form" id="booking" novalidate>
+        <div class="two">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"
+                   pattern="[0-9+ ]{10,15}" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="reason">What do you need?</label>
+          <select id="reason" name="reason">
+            <option>Check-up</option>
+            <option>Cleaning and polishing</option>
+            <option>Toothache or sensitivity</option>
+            <option>Filling</option>
+            <option>Root canal</option>
+            <option>Crown or bridge</option>
+            <option>Braces or aligners</option>
+            <option>Extraction</option>
+            <option>Whitening</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="two">
+          <div class="field">
+            <label for="date">Preferred day <span class="hint">optional</span></label>
+            <input id="date" name="date" type="date">
+          </div>
+          <div class="field">
+            <label>Preferred time</label>
+            <div class="chooser">
+              <label><input type="radio" name="preferred" value="Morning" checked><span>Morning</span></label>
+              <label><input type="radio" name="preferred" value="Afternoon"><span>Afternoon</span></label>
+              <label><input type="radio" name="preferred" value="Evening"><span>Evening</span></label>
+              <label><input type="radio" name="preferred" value="No preference"><span>Any time</span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="notes">Anything we should know <span class="hint">optional</span></label>
+          <textarea id="notes" name="notes" placeholder="Previous treatment, medication you take, or how long this has been bothering you."></textarea>
+        </div>
+
+        <div class="btn-row" style="margin-top:1.25rem">
+          <button class="btn btn-go" type="submit">Send request</button>
+          <button class="btn btn-line" type="button" id="wa-send">Send on WhatsApp</button>
+        </div>
+
+        <div class="formstate" id="formstate" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="band band-wash">
+    <div class="shell">
+      <div class="band-head">
+        <h2>What happens next</h2>
+        <p>Three steps, no surprises.</p>
+      </div>
+      <div class="points">
+        <div>
+          <h3>We call you back</h3>
+          <p>Usually within a few hours during clinic hours, to agree an exact time that works for both of us.</p>
+        </div>
+        <div>
+          <h3>You arrive</h3>
+          <p>Bring any previous X-rays or prescriptions if you have them. If not, no problem &mdash; we will take what we need.</p>
+        </div>
+        <div>
+          <h3>You leave with a plan</h3>
+          <p>Written, itemised and priced. Nothing gets started before you have seen it and said yes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo-light.png" alt=""><b>GRS Dental Care</b></div>
+        <p>No. 7, Ponniamman Kovil 1st Street,<br>Sholinganallur, Chennai 600119</p>
+        <p><a href="tel:+918807754007">88077 54007</a></p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointment.html">Book a visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+918807754007">Call the clinic</a></li>
+          <li><a href="https://wa.me/918807754007">WhatsApp</a></li>
+          <li><a href="appointment.html">Request an appointment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>&copy; <span id="yr">2026</span> GRS Dental Care</span>
+      <span>Sholinganallur, Chennai</span>
+    </div>
+  </div>
+</footer>
+
+
+<div class="callbar">
+  <a href="tel:+918807754007">Call</a>
+  <a class="go" href="appointment.html">Book a visit</a>
+</div>
+
+<script src="site.js"></script>
+</body>
+</html>
